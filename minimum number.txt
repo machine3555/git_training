@@ -1,0 +1,23 @@
+using System
+
+namespace min_num
+{
+    class Test
+    {
+
+        static void Main()
+        {
+            int a;
+            int b
+            Console.Write("Enter first number : ");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter second number: ");
+            b = Convert.ToInt32(Console.ReadLine());
+
+            if (a > b)
+                Console.WriteLine("b is smallest number");
+            else
+                Console.WriteLine("a is smallest number");
+        }
+    }
+}

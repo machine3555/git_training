@@ -1,0 +1,23 @@
+using System;
+
+namespace shell
+{
+    class Program
+    {
+
+            public static void ChangeA(ref int a, ref int b)
+            {
+                a = a + b;
+                Console.WriteLine("the changed value of A with respective to B is " + a);
+            }
+            public static void Main()
+            {
+                Console.WriteLine("Enter the value of A");
+                int a = int.Parse(Console.ReadLine());
+                Console.WriteLine("Enter the value of B");
+                int b = int.Parse(Console.ReadLine());
+                ChangeA(ref a, ref b);
+            }
+        
+    }
+}

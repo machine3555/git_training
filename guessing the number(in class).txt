@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+public class Program
+{
+  public static void Main()
+  {
+    int i = 777;
+            while(true){
+                Console.WriteLine("Guessing Number Game");
+                Console.Write("Enter the Number ");
+                int a = int.Parse(Console.ReadLine());
+                if (a>i)
+                    Console.WriteLine($"The number is smaller than {a}.");
+                else if(a==i){
+                Console.WriteLine("You guessed it correct");
+                    break;
+                    }
+                else
+                Console.WriteLine($"The number is bigger than {a}.");
+                }
+  }
+}

@@ -1,0 +1,21 @@
+using System;
+namespace shell{
+class num_vowels {
+   public static void Main() {
+      string myStr;
+      int i, len, vowel_count, cons_count;
+      myStr = "qwertyuio";
+      vowel_count = 0;
+      cons_count = 0;
+      len = myStr.Length;
+      for(i=0; i<len; i++) {
+         if(myStr[i] =='a' || myStr[i]=='e' || myStr[i]=='i' || myStr[i]=='o' || myStr[i]=='u' || myStr[i]=='A' || myStr[i]=='E' || myStr[i]=='I' || myStr[i]=='O' || myStr[i]=='U') {
+            Console.WriteLine(vowel_count++);
+         } else {
+            Console.WriteLine(cons_count++);
+         }
+      }
+      Console.Write("number of Vowels in the string: {0}", vowel_count);
+   }
+}
+}

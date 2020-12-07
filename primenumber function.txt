@@ -1,0 +1,21 @@
+using System;
+class primenumber
+{
+    public static bool primenum_check(int a)
+    {
+        for (int i=2; i < a; i++)
+          if (a %i == 0) 
+            return false;
+          return true;
+    }
+    public static void Main()
+    {
+	  Console.Write("Input a number : ");
+      int a = Convert.ToInt32(Console.ReadLine());	
+	
+        if (primenum_check(a))
+          Console.WriteLine(a +" is a prime number");
+        else
+          Console.WriteLine(a +" is not a prime number");
+    }
+}

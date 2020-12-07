@@ -1,0 +1,56 @@
+using System;
+using System.Threading;
+
+namespace ConsoleApp1_11nov2020
+{
+    class Program
+    {
+        enum emp { emp1 = 250000, emp2 = 450000, emp3 = 750000, emp4 = 950000 };
+        public static void Cat(ref int sal)
+        {
+            if (sal <= 300000)
+                Console.WriteLine("Class A");
+            else if (sal >= 300000 && sal <= 600000)
+                Console.WriteLine("Class B");
+            else if (sal >= 600000 && sal <= 800000)
+                Console.WriteLine("Class C");
+            else if (sal >= 800000)
+                Console.WriteLine("Class D");
+        }
+        public static void Main(string[] args)
+        {
+            string name;
+            int sal;
+            Console.WriteLine("Enter the name of the employee");
+            name = Console.ReadLine();
+            
+            if (name == "emp1")
+            {
+                sal = (int)emp.emp1;
+                Cat(ref sal);
+            }
+
+            else if (name == "emp2")
+            {
+                sal = (int)emp.emp2;
+                Cat(ref sal);
+            }
+
+            else if (name == "emp3") 
+            { 
+                sal = (int)emp.emp3;
+                Cat(ref sal);
+            }
+            
+            else if (name == "emp4") 
+            {                 
+                sal = (int)emp.emp4;
+                Cat(ref sal);
+            }
+
+            else
+                Console.WriteLine("Employee not found");
+
+        }
+    }
+}

@@ -1,0 +1,21 @@
+using System;
+class func_small
+{
+    public static void Small_func( ref int a,ref int b)
+    {
+       if (a > b)
+                Console.WriteLine("b is smallest number");
+            else
+                Console.WriteLine("a is smallest number");
+    }
+     
+    public static void Main()
+    {
+	 
+	  Console.Write("Enter a number: ");
+      int a= Convert.ToInt32(Console.ReadLine());
+      Console.Write("Enter another number: ");
+      int b= Convert.ToInt32(Console.ReadLine());
+      Console.WriteLine("\nThe sum of two numbers is : {0} \n", Small_func(ref a,ref b) );
+    }
+}
