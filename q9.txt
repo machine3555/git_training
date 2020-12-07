@@ -1,0 +1,74 @@
+using System;
+namespace shell
+{
+  class gross_salary
+  {
+    gross(int pf,int gf)
+    {
+      pf = int.Parse(Console.ReadLine());
+      gf =int.Parse(Console.ReadLine());
+    }
+    static char getGrade()
+    {
+      float totalsalary = getDetails();
+      if (totalsalary>10000)
+      return 'A';
+      else if(totalsalary>5000)
+      return 'B';
+      else if (totalsalary<5000)
+      return 'c';
+      
+    }
+    static float getDetails()
+    {
+      Console.WriteLine("enter the name");
+      string name= Console.ReadLine();
+      Console.WriteLine("enter the pincode");
+      int pincode= int.Parse(Console.ReadLine());
+      Console.WriteLine("enter your gender");
+      string gender = Console.ReadLine();
+      Console.WriteLine("enter the  salary");
+      int salary = int.Parse(Console.ReadLine());
+      Console.WriteLine("enter the  pf");
+      int pf = int.Parse(Console.ReadLine());
+      return (salary-pf);
+    }
+    static void Main()
+    {
+      Console.WriteLine($"the grade is {getGrade()}");
+    }
+
+
+    
+  }
+}
+
+
+
+
+
+
+//secondmethod
+using System;
+namespace shell
+{
+  class gross
+  {
+    int pf =70000;
+    int sa = 40000;
+    int getdetails()
+    {
+      int salary= (sa-pf);
+      return salary;
+    }
+    static void Main()
+    {
+      gross sk = new gross();
+      Console.WriteLine(sk.getdetails());
+
+    }
+
+    
+    
+  }
+}
